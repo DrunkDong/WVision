@@ -1,0 +1,78 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:CamParam id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CamInfo1 href="#ref-3"/>
+<CamInfo2 href="#ref-4"/>
+<CamInfo3 href="#ref-5"/>
+<CamInfo4 href="#ref-6"/>
+<CamInfo5 href="#ref-7"/>
+<CamInfo6 href="#ref-8"/>
+<CamInfo7 href="#ref-9"/>
+<CamInfo8 href="#ref-10"/>
+<CamInfo9 href="#ref-11"/>
+<CamInfo10 href="#ref-12"/>
+<CamInfo11 href="#ref-13"/>
+<CamInfo12 href="#ref-14"/>
+</a1:CamParam>
+<a1:CamParamInfo id="ref-3" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>1050</CameraExposure>
+<CameraGain>1</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>1050</CameraExposure>
+<CameraGain>2</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>820</CameraExposure>
+<CameraGain>1</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-6" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>1000</CameraExposure>
+<CameraGain>1</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-7" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>200</CameraExposure>
+<CameraGain>0</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-8" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>200</CameraExposure>
+<CameraGain>0</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-9" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>200</CameraExposure>
+<CameraGain>0</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-10" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>200</CameraExposure>
+<CameraGain>0</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-11" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>200</CameraExposure>
+<CameraGain>0</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-12" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>200</CameraExposure>
+<CameraGain>0</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-13" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>200</CameraExposure>
+<CameraGain>0</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+<a1:CamParamInfo id="ref-14" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/WeiVision/WeiVision%2C%20Version%3D2.4.0.3%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<CameraExposure>200</CameraExposure>
+<CameraGain>0</CameraGain>
+<TriggerDelay>0</TriggerDelay>
+</a1:CamParamInfo>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

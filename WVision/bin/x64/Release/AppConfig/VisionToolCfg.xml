@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ToolCfg>
+  <BlobName name="图片预处理" >
+    <tool>通道分解</tool>
+    <tool>图像矫正</tool>
+    <tool>裁剪图像</tool>
+    <tool>Bitmap转换</tool>
+  </BlobName>
+  <Name2 name="Blob处理" >
+    <tool>区域提取</tool>
+    <tool>灰度缩放</tool>
+  </Name2>
+  <FeaturesName name="特征查找" >
+    <tool>模板匹配</tool>
+    <tool>灰度匹配</tool>
+    <tool>查找直线</tool>
+    <tool>查找圆</tool>
+  </FeaturesName>
+  <MeasureName name="测量" >
+    <tool>角度测量</tool>
+    <tool>点到点</tool>
+    <tool>点到直线</tool>
+    <tool>直线到直线</tool>
+  </MeasureName>
+  <AIName name="深度学习/AI" >
+    <tool>分类器</tool>
+    <tool>深度OCR</tool>
+    <tool>目标检测1</tool>
+    <tool>语义分割</tool>
+  </AIName>
+</ToolCfg>
