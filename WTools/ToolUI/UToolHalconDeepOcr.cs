@@ -55,7 +55,7 @@ namespace WTools
             comboBox_PositioningStep.Items.Add("0_无输入");
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-               if (StepIndex < (i + 1))
+               if (StepIndex <= (i + 1))
                     break;
 
                 if (StepInfoList[i].mToolResultType == ToolResultType.ImageAlignData)
@@ -102,7 +102,7 @@ namespace WTools
             comboBox_ImageStep.Items.Add("0_无输入");
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-               if (StepIndex < (i + 1))
+               if (StepIndex <= (i + 1))
                     break;
 
                 if (StepInfoList[i].mToolResultType == ToolResultType.Image)
@@ -206,7 +206,7 @@ namespace WTools
             comboBox_PositioningStep.Items.Add("0_无输入");
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-                if (StepIndex < (i + 1))
+                if (StepIndex <= (i + 1))
                     break;
 
                 if (StepInfoList[i].mToolResultType == ToolResultType.ImageAlignData)
@@ -232,7 +232,7 @@ namespace WTools
             comboBox_ImageStep.Items.Add("0_本地图片");
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-                if (StepIndex < (i + 1))
+                if (StepIndex <= (i + 1))
                     break;
 
                 if (StepInfoList[i].mToolResultType == ToolResultType.Image)

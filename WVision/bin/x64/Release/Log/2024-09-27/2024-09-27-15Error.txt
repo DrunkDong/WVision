@@ -1,0 +1,18 @@
+[2024-09-27 15:49:49,554]  1 -- ERROR -- -----------------------begin--------------------------
+[2024-09-27 15:49:49,562]  1 -- ERROR -- Application_ThreadException2024-09-27 03:49:49
+[2024-09-27 15:49:49,592]  1 -- ERROR -- System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 WVision.FrmCamListView.InitParam() 位置 D:\002------GitWorkSpace\WVision\WVision\Forms\FrmCamListView.cs:行号 240
+   在 WVision.FrmCamListView.FrmCamListView_Load(Object sender, EventArgs e) 位置 D:\002------GitWorkSpace\WVision\WVision\Forms\FrmCamListView.cs:行号 104
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 Sunny.UI.UIForm.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+[2024-09-27 15:49:49,593]  1 -- ERROR -- -----------------------end----------------------------
+[2024-09-27 15:49:49,593]  1 -- ERROR -- System.Threading.ThreadExceptionEventArgs

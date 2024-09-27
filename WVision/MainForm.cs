@@ -46,7 +46,7 @@ namespace WVision
             mMachine.Waiting = new FrmWait();
             mMachine.Waiting.Show();
             mMachine.Waiting.Visible = false;
-            load.SetValue(10, "配置文件读取中...");
+            load.SetValue(5, "配置文件读取中...");
             //初始化配置文件
             SettingInfo info;
             if (mMachine.DeSerializeFuc(mMachine.SettingInfoSavePath, out info))
@@ -61,7 +61,7 @@ namespace WVision
                 info = new SettingInfo();
                 mMachine.SettingInfo = info;
             }
-            int vae = 15;
+            int vae = 10;
             DahengCamera.QueryCamera(out List<CameraInfo> lit);
             //初始化相机
             for (int i = 0; i < mMachine.SettingInfo.CameraInfoList.Count; i++)
@@ -228,7 +228,7 @@ namespace WVision
 
         private void InitTaskWindow()
         {
-            for (int i = 0; i < mMachine.TaskList.Count; i++)
+            for (int i = 0; i < mMachine.CamList.Count; i++)
             {
                 mMachine.TaskList[i].Camera = mMachine.CamList[i];
                 mMachine.TaskList[i].ToolWind = mMachine.HWindowControlList[i];

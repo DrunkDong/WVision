@@ -1,0 +1,16 @@
+[2024-09-27 15:50:01,790]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:50:01,808]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:50:01,825]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:50:01,845]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:50:01,867]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:50:01,877]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:50:01,890]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:50:01,900]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:57:24,746]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:57:24,763]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:57:24,774]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:57:24,783]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:57:24,795]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:57:24,803]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:57:24,813]  1 -- FATAL -- {strSN  illegality}
+[2024-09-27 15:57:24,823]  1 -- FATAL -- {strSN  illegality}

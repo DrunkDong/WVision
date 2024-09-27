@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using Modbus.Device;
+using System.Net.NetworkInformation;
 
 namespace WCommonTools
 {
@@ -33,6 +34,12 @@ namespace WCommonTools
         {
             try
             {
+                PingReply reply = new Ping().Send(Address, 200);
+                if (reply.Status != IPStatus.Success)
+                {
+                    mIsConnected = false;
+                    return false;
+                }
                 client = new TcpClient(Address, Port);
                 client.SendTimeout = 1;
                 master = ModbusIpMaster.CreateIp(client);

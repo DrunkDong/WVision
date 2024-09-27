@@ -49,7 +49,7 @@ namespace WTools
             comboBox_Line1Source.Items.Clear();
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-                if (StepIndex < (i + 1))
+                if (StepIndex <= (i + 1))
                     break;
                 if (StepInfoList[i].mToolType == ToolType.DistanceLL)
                 {
@@ -60,7 +60,7 @@ namespace WTools
             comboBox_Line2Source.Items.Clear();
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-                if (StepIndex < (i + 1))
+                if (StepIndex <= (i + 1))
                     break;
                 if (StepInfoList[i].mToolType == ToolType.DistanceLL)
                 {
@@ -180,7 +180,7 @@ namespace WTools
             comboBox_Line1Source.Items.Clear();
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-                if (StepIndex < (i + 1))
+                if (StepIndex <= (i + 1))
                     break;
                 if (StepInfoList[i].mToolType == ToolType.DistanceLL) 
                 {
@@ -191,7 +191,7 @@ namespace WTools
             comboBox_Line2Source.Items.Clear();
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-                if (StepIndex < (i + 1))
+                if (StepIndex <= (i + 1))
                     break;
                 if (StepInfoList[i].mToolType == ToolType.DistanceLL)
                 {

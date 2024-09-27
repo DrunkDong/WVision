@@ -63,7 +63,7 @@ namespace WTools
             comboBox_LineSourceStep.Items.Add("0_无输入");
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-                if (StepIndex < (i + 1))
+                if (StepIndex <= (i + 1))
                     break;
                 if (StepInfoList[i].mToolResultType == ToolResultType.Line)
                 {
@@ -110,7 +110,7 @@ namespace WTools
             comboBox_Line2SourceStep.Items.Add("0_无输入");
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-                if (StepIndex < (i + 1))
+                if (StepIndex <= (i + 1))
                     break;
                 if (StepInfoList[i].mToolResultType == ToolResultType.Line)
                 {
@@ -211,7 +211,7 @@ namespace WTools
             comboBox_LineSourceStep.Items.Add("0_无输入");
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-                if (StepIndex < (i + 1))
+                if (StepIndex <= (i + 1))
                     break;
                 if (StepInfoList[i].mToolResultType == ToolResultType.Line)
                 {
@@ -259,7 +259,7 @@ namespace WTools
             comboBox_Line2SourceStep.Items.Add("0_无输入");
             for (int i = 0; i < StepInfoList.Count; i++)
             {
-                if (StepIndex < (i + 1))
+                if (StepIndex <= (i + 1))
                     break;
                 if (StepInfoList[i].mToolResultType == ToolResultType.Line)
                 {
