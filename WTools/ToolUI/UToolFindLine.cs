@@ -387,7 +387,7 @@ namespace WTools
                 if (StepIndex < (i + 1))
                     break;
 
-                if (StepInfoList[i].mToolType == ToolType.ShapeModle|| StepInfoList[i].mToolType == ToolType.NccShapeModel)
+                if (StepInfoList[i].mToolResultType == ToolResultType.ImageAlignData)
                 {
                     comboBox_PositioningStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -434,7 +434,7 @@ namespace WTools
                 if (StepIndex < (i + 1))
                     break;
 
-                if (StepInfoList[i].mToolType == ToolType.DecomposeRGB || StepInfoList[i].mToolType == ToolType.ScaleImage)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Image)
                 {
                     comboBox_ImageStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -481,7 +481,7 @@ namespace WTools
                 if (StepIndex < (i + 1))
                     break;
 
-                if (StepInfoList[i].mToolType == ToolType.Rectangle1ToLine|| StepInfoList[i].mToolType == ToolType.Rectangle2ToLine)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Line)
                 {
                     comboBox_LineSourceStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -638,7 +638,7 @@ namespace WTools
                 if (StepIndex < (i + 1))
                     break;
 
-                if (StepInfoList[i].mToolType == ToolType.ShapeModle || StepInfoList[i].mToolType == ToolType.NccShapeModel)
+                if (StepInfoList[i].mToolResultType == ToolResultType.ImageAlignData)
                 {
                     comboBox_PositioningStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -660,7 +660,7 @@ namespace WTools
                 if (StepIndex < (i + 1))
                     break;
 
-                if (StepInfoList[i].mToolType == ToolType.DecomposeRGB || StepInfoList[i].mToolType == ToolType.ScaleImage)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Image)
                 {
                     comboBox_ImageStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -682,7 +682,7 @@ namespace WTools
                 if (StepIndex < (i + 1))
                     break;
 
-                if (StepInfoList[i].mToolType == ToolType.Rectangle1ToLine || StepInfoList[i].mToolType == ToolType.Rectangle2ToLine)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Line)
                 {
                     comboBox_LineSourceStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }

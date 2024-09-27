@@ -51,7 +51,7 @@ namespace WTools
             {
                 if (StepIndex < (i + 1))
                     break;
-                if (StepInfoList[i].mToolType == ToolType.FindCircle)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Point || StepInfoList[i].mToolResultType == ToolResultType.Circle)
                 {
                     comboBox_Line1Source.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -62,7 +62,7 @@ namespace WTools
             {
                 if (StepIndex < (i + 1))
                     break;
-                if (StepInfoList[i].mToolType == ToolType.FindCircle)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Point|| StepInfoList[i].mToolResultType == ToolResultType.Circle)
                 {
                     comboBox_Line2Source.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }

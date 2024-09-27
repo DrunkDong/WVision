@@ -73,8 +73,7 @@ namespace WTools
                if (StepIndex < (i + 1))
                     break;
 
-                if (StepInfoList[i].mToolType == ToolType.DecomposeRGB ||
-                    StepInfoList[i].mToolType == ToolType.CorrectImage)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Image)
                 {
                     comboBox_ImageStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -99,8 +98,7 @@ namespace WTools
             {
                if (StepIndex < (i + 1))
                     break;
-
-                if (StepInfoList[i].mToolType == ToolType.NccShapeModel || StepInfoList[i].mToolType == ToolType.ShapeModle)
+                if (StepInfoList[i].mToolResultType == ToolResultType.ImageAlignData)
                 {
                     comboBox_PositioningStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -126,7 +124,7 @@ namespace WTools
                if (StepIndex < (i + 1))
                     break;
 
-                if (StepInfoList[i].mToolType == ToolType.RegionBlob)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Region)
                 {
                     comboBox_RegionStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -173,7 +171,7 @@ namespace WTools
                if (StepIndex < (i + 1))
                     break;
 
-                if (StepInfoList[i].mToolType == ToolType.DecomposeRGB || StepInfoList[i].mToolType == ToolType.CorrectImage)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Image)
                 {
                     comboBox_ImageStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -221,7 +219,7 @@ namespace WTools
             {
                if (StepIndex < (i + 1))
                     break;
-                if (StepInfoList[i].mToolType == ToolType.NccShapeModel || StepInfoList[i].mToolType == ToolType.ShapeModle)
+                if (StepInfoList[i].mToolResultType == ToolResultType.ImageAlignData)
                 {
                     comboBox_PositioningStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -270,7 +268,7 @@ namespace WTools
             {
                if (StepIndex < (i + 1))
                     break;
-                if (StepInfoList[i].mToolType == ToolType.RegionBlob)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Region)
                 {
                     comboBox_RegionStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }

@@ -50,7 +50,7 @@ namespace WTools
             {
                 if (StepIndex < (i + 1))
                     break;
-                if (StepInfoList[i].mToolType == ToolType.ScaleImage || StepInfoList[i].mToolType == ToolType.DecomposeRGB)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Image)
                 {
                     comboBox_ImageStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
@@ -154,7 +154,7 @@ namespace WTools
                 if (StepIndex < (i + 1))
                     break;
 
-                if (StepInfoList[i].mToolType == ToolType.ScaleImage || StepInfoList[i].mToolType == ToolType.DecomposeRGB)
+                if (StepInfoList[i].mToolResultType == ToolResultType.Image)
                 {
                     comboBox_ImageStep.Items.Add((i + 1) + "_" + StepInfoList[i].mShowName);
                 }
