@@ -28,7 +28,13 @@ namespace WTools
         private string mResultString;
         private bool mForceOK;
         private int mNgReturnValue;
+        private ToolResultType mToolResultType;
 
+        public override ToolResultType ToolResultType
+        {
+            get => mToolResultType;
+            set => mToolResultType = value;
+        }
         public override bool ForceOK
         {
             get => mForceOK;
@@ -70,14 +76,17 @@ namespace WTools
             set => mResultString = value;
         }
 
-        public delegate int ParamChangedDe(HObject obj1, Bitmap obj2, List<StepInfo> StepInfoList, bool ShowObj);
+        public delegate int ParamChangedDe(HObject obj1,List<StepInfo> StepInfoList, bool ShowObj);
         [NonSerialized]
         public ParamChangedDe mParamChangedDe;
         public ToolCompareDistanceParam()
         {
             mStepInfo = new StepInfo();
-            ToolType = ToolType.CompareDistance;
-            StepInfo.mToolType = ToolType.CompareDistance;
+            mToolType = ToolType.CompareDistance;
+            mStepInfo.mToolType = ToolType.CompareDistance;
+            mToolResultType = ToolResultType.DoubleValue;
+            mStepInfo.mToolResultType = ToolResultType.DoubleValue;
+
             mShowName = "间距比较";
             mToolName = "间距比较";
             mStepInfo.mShowName = "间距比较";
@@ -115,7 +124,7 @@ namespace WTools
             BindDelegate(true);
         }
 
-        public override int DebugRun(HObject objj1, Bitmap objj2, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
+        public override int DebugRun(HObject objj1,List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
         {
             StepJumpInfo = new JumpInfo();
             if (mToolParam.ForceOK)
@@ -125,11 +134,12 @@ namespace WTools
                 double dis1 = StepInfoList[mToolParam.mLine1StepIndex - 1].mToolRunResul.mParamOutPut[0];
                 double dis2 = StepInfoList[mToolParam.mLine2StepIndex - 1].mToolRunResul.mParamOutPut[0];
                 double dis3 = Math.Abs(dis1 - dis2);
+                mToolParam.StepInfo.mToolRunResul.mParamOutPut[0] = dis3;
                 mToolParam.ResultString =
                     "间距1为：" + dis1.ToString("0.00") + "\r\n" +
                     "间距2为：" + dis2.ToString("0.00") + "\r\n" +
                     "两者差值为：" + dis3.ToString("0.00");
-                if (dis3 > mToolParam.mSelectMaxValue)
+                if (dis3 > mToolParam.mSelectMaxValue|| dis3 < mToolParam.mSelectMinValue)
                     return 1;
                 return 0;
             }
@@ -146,10 +156,10 @@ namespace WTools
             return ResStatus.OK;
         }
 
-        public override int ParamChanged(HObject obj1, Bitmap obj2, List<StepInfo> StepInfoList, bool ShowObj)
+        public override int ParamChanged(HObject obj1, List<StepInfo> StepInfoList, bool ShowObj)
         {
             JumpInfo StepJumpInfo;
-            return DebugRun(obj1, obj2, StepInfoList, false, out StepJumpInfo);
+            return DebugRun(obj1, StepInfoList, false, out StepJumpInfo);
         }
 
         public override ResStatus SetDebugWind(HTuple DebugWind, HWindow DrawWind)
@@ -165,7 +175,7 @@ namespace WTools
             return ResStatus.OK;
         }
 
-        public override int ToolRun(HObject obj1, Bitmap obj2, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
+        public override int ToolRun(HObject obj1, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
         {
             StepJumpInfo = new JumpInfo();
             if (mToolParam.ForceOK)
@@ -175,11 +185,12 @@ namespace WTools
                 double dis1 = StepInfoList[mToolParam.mLine1StepIndex - 1].mToolRunResul.mParamOutPut[0];
                 double dis2 = StepInfoList[mToolParam.mLine2StepIndex - 1].mToolRunResul.mParamOutPut[0];
                 double dis3 = Math.Abs(dis1 - dis2);
+                mToolParam.StepInfo.mToolRunResul.mParamOutPut[0] = dis3;
                 mToolParam.ResultString =
                     "间距1为：" + dis1.ToString("0.00") + "\r\n" +
                     "间距2为：" + dis2.ToString("0.00") + "\r\n" +
                     "两者差值为：" + dis3.ToString("0.00");
-                if (dis3 > mToolParam.mSelectMaxValue)
+                if (dis3 > mToolParam.mSelectMaxValue || dis3 < mToolParam.mSelectMinValue)
                     return 1;
                 return 0;
             }

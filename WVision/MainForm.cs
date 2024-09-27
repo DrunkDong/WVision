@@ -327,7 +327,7 @@ namespace WVision
                         HOperatorSet.ReadImage(out HObject image, Application.StartupPath + "\\AppConfig\\预热\\1.png");
                         foreach (var item in mMachine.TaskList[i].ToolList)
                         {
-                            item.ToolRun(image, null, mMachine.TaskList[i].StepInfoList, false, out JumpInfo info);
+                            item.ToolRun(image, mMachine.TaskList[i].StepInfoList, false, out JumpInfo info);
                         }
                     }
                 }

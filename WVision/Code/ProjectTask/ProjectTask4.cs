@@ -78,7 +78,7 @@ namespace WVision
                             JumpInfo info;
                             HTuple ss1, ss2;
                             HOperatorSet.CountSeconds(out ss1);
-                            res = item.ToolRun(currImage, null, StepInfoList, false, out info);
+                            res = item.ToolRun(currImage, StepInfoList, false, out info);
                             HOperatorSet.CountSeconds(out ss2);
                             if (CostTime > 300)
                                 LogHelper.WriteExceptionLog(TaskNmae + " " + item.ToolParam.ShowName + " 耗时：" + (ss2.D - ss1.D).ToString("f2") + "ms\r\n");

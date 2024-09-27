@@ -111,7 +111,7 @@ namespace WVision
                             JumpInfo info;
                             HTuple ss1, ss2;
                             HOperatorSet.CountSeconds(out ss1);
-                            res = item.ToolRun(currImage, null, StepInfoList, false, out info);
+                            res = item.ToolRun(currImage, StepInfoList, false, out info);
                             HOperatorSet.CountSeconds(out ss2);
                             //错误工具显示名称
                             if (res != 0)

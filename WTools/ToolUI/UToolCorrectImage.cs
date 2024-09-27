@@ -267,7 +267,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             textBox_Mes.Text = mToolParam.ResultString + "\r\n" + "当前耗时：" + ((s2.D - s1.D) * 1000).ToString("00.00") + " ms";
             mToolMachine.mChangeState(StepIndex, res);
@@ -287,7 +287,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             textBox_Mes.Text = mToolParam.ResultString + "\r\n" + "当前耗时：" + ((s2.D - s1.D) * 1000).ToString("00.00") + " ms";
             mToolMachine.mChangeState(StepIndex, res);

@@ -80,7 +80,13 @@ namespace WTools
         private string mResultString;
         private bool mForceOK;
         private int mNgReturnValue;
+        private ToolResultType mToolResultType;
 
+        public override ToolResultType ToolResultType
+        {
+            get => mToolResultType;
+            set => mToolResultType = value;
+        }
 
         public override bool ForceOK
         {
@@ -125,7 +131,7 @@ namespace WTools
         }
 
         public delegate ResStatus InitAiModelDe();
-        public delegate int ParamChangedDe(HObject obj1, Bitmap obj2, List<StepInfo> StepInfoList, bool ShowObj);
+        public delegate int ParamChangedDe(HObject obj1, List<StepInfo> StepInfoList, bool ShowObj);
         public delegate int CheckAiDel(HObject obj1, List<StepInfo> StepInfoList);
         public delegate int DrawRoiDel(HObject obj1, int mIndex, int type, string mRoiType, int mMarkSize, out HObject obj2);
         public delegate int DrawRoi2Del(HObject obj1, int mIndex, string mRoiType, out HObject obj2);
@@ -151,10 +157,13 @@ namespace WTools
         {
             mStepInfo = new StepInfo();
             mStepInfo.mToolType = ToolType.HObjecDetect1;
+            mToolType = ToolType.HObjecDetect1;
+            mStepInfo.mToolResultType = ToolResultType.None;
+            mToolResultType = ToolResultType.None;
+
             mShowName = "目标检测1";
             mToolName = "目标检测1";
             mStepInfo.mShowName = "目标检测1";
-            mToolType = ToolType.HObjecDetect1;
 
             mShapeModelStep = -1;
             mShapeModelMark = -1;
@@ -199,7 +208,7 @@ namespace WTools
             BindDelegate(true);
         }
 
-        public override int DebugRun(HObject objj1, Bitmap objj2, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
+        public override int DebugRun(HObject objj1, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
         {
             StepJumpInfo = new JumpInfo();
             if (mToolParam.mAiModelPath == "")
@@ -216,10 +225,10 @@ namespace WTools
             return ResStatus.OK;
         }
 
-        public override int ParamChanged(HObject obj1, Bitmap obj2, List<StepInfo> StepInfoList, bool ShowObj)
+        public override int ParamChanged(HObject obj1, List<StepInfo> StepInfoList, bool ShowObj)
         {
             JumpInfo StepJumpInfo;
-            return DebugRun(obj1, obj2, StepInfoList, false, out StepJumpInfo);
+            return DebugRun(obj1, StepInfoList, false, out StepJumpInfo);
         }
 
         public override ResStatus SetDebugWind(HTuple DebugWind, HWindow DrawWind)
@@ -235,7 +244,7 @@ namespace WTools
             return ResStatus.OK;
         }
 
-        public override int ToolRun(HObject obj11, Bitmap obj22, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
+        public override int ToolRun(HObject obj11, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
         {
             StepJumpInfo = new JumpInfo();
             if (mHalconDlModel == null)

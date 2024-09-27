@@ -26,6 +26,8 @@ namespace WTools
 
         public abstract ToolType ToolType { get; set; }
 
+        public abstract ToolResultType ToolResultType { get; set; }
+
         public abstract JumpInfo StepJumpInfo { get; set; }
 
         public virtual string ResultString { get; set; }

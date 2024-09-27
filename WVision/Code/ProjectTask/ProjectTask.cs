@@ -267,7 +267,7 @@ namespace WVision
                                 JumpInfo info;
                                 HTuple ss1, ss2;
                                 HOperatorSet.CountSeconds(out ss1);
-                                res = item.ToolRun(CurrentImage, CurrentBitmap, mStepInfoList, false, out info);
+                                res = item.ToolRun(CurrentImage, mStepInfoList, false, out info);
                                 HOperatorSet.CountSeconds(out ss2);
                                 mErrorCode.Add(TaskNmae + ":  " + item.ToolParam.StepInfo.mStepIndex.ToString() + " _ " + item.ToolParam.ShowName
                                     + "    耗时：" + ((ss2.D - ss1.D) * 1000).ToString());

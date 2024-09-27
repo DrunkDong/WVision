@@ -441,7 +441,7 @@ namespace WVision
                 JumpInfo info;
                 HTuple s1, s2;
                 HOperatorSet.CountSeconds(out s1);
-                res = mToolList[i].DebugRun(mToolMachine.ToolCurrImage, null, mStepInfoList, false, out info);
+                res = mToolList[i].DebugRun(mToolMachine.ToolCurrImage, mStepInfoList, false, out info);
                 HOperatorSet.CountSeconds(out s2);
                 ChangeCostTime(i + 1, ((s2.D - s1.D) * 1000).ToString("00.00") + " ms");
                 ChangeState(i + 1, res);
@@ -461,7 +461,7 @@ namespace WVision
                     JumpInfo info;
                     HTuple s1, s2;
                     HOperatorSet.CountSeconds(out s1);
-                    res = mToolList[step].DebugRun(mToolMachine.ToolCurrImage, null, mStepInfoList, false, out info);
+                    res = mToolList[step].DebugRun(mToolMachine.ToolCurrImage, mStepInfoList, false, out info);
                     HOperatorSet.CountSeconds(out s2);
                     ChangeCostTime(step + 1, ((s2.D - s1.D) * 1000).ToString("00.00") + " ms");
                     ChangeState(step + 1, res);
@@ -486,7 +486,7 @@ namespace WVision
                         JumpInfo info;
                         HTuple s1, s2;
                         HOperatorSet.CountSeconds(out s1);
-                        res = mToolList[mCurrStepIndex].DebugRun(mToolMachine.ToolCurrImage, null, mStepInfoList, false, out info);
+                        res = mToolList[mCurrStepIndex].DebugRun(mToolMachine.ToolCurrImage, mStepInfoList, false, out info);
                         HOperatorSet.CountSeconds(out s2);
                         ChangeCostTime(mCurrStepIndex + 1, ((s2.D - s1.D) * 1000).ToString("00.00") + " ms");
                         ChangeState(mCurrStepIndex + 1, res);
@@ -524,7 +524,7 @@ namespace WVision
                 JumpInfo info;
                 HTuple s1, s2;
                 HOperatorSet.CountSeconds(out s1);
-                res = mToolList[mCurrStepIndex].DebugRun(mToolMachine.ToolCurrImage, null, mStepInfoList, false, out info);
+                res = mToolList[mCurrStepIndex].DebugRun(mToolMachine.ToolCurrImage, mStepInfoList, false, out info);
                 HOperatorSet.CountSeconds(out s2);
                 ChangeCostTime(mCurrStepIndex + 1, ((s2.D - s1.D) * 1000).ToString("00.00") + " ms");
                 ChangeState(mCurrStepIndex + 1, res);

@@ -96,7 +96,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -121,7 +121,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -146,7 +146,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -171,7 +171,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -195,7 +195,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -219,7 +219,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -243,7 +243,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -267,7 +267,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -291,7 +291,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -315,7 +315,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -339,7 +339,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -738,7 +738,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));
@@ -762,7 +762,7 @@ namespace WTools
             }
             HTuple s1, s2;
             HOperatorSet.CountSeconds(out s1);
-            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, mToolMachine.ToolCurrBitmap, StepInfoList, false);
+            int res = mToolParam.mParamChangedDe(mToolMachine.ToolCurrImage, StepInfoList, false);
             HOperatorSet.CountSeconds(out s2);
             mToolMachine.mChangeState(StepIndex, res);
             mToolMachine.mChangeToolCostTime(StepIndex, ((s2.D - s1.D) * 1000).ToString("0.00"));

@@ -53,6 +53,8 @@ namespace WTools
         CropImage = 43,
         DeepOcr = 44,
         CorrectImage = 45,
+        FindLineAndCheck = 46,
+        BlobList = 47,
         None = 999
     }
 }

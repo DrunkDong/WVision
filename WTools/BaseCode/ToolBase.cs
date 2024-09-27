@@ -10,9 +10,9 @@ namespace WTools
     public abstract class ToolBase
     {
         public abstract ToolParamBase ToolParam { get; set; }
-        public abstract int ParamChanged(HObject obj1, Bitmap obj2, List<StepInfo> StepInfoList, bool ShowObj);
-        public abstract int DebugRun(HObject obj1, Bitmap obj2, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo);
-        public abstract int ToolRun(HObject obj1, Bitmap obj2, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo);
+        public abstract int ParamChanged(HObject obj1, List<StepInfo> StepInfoList, bool ShowObj);
+        public abstract int DebugRun(HObject obj1, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo);
+        public abstract int ToolRun(HObject obj1, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo);
         public abstract ResStatus SetRunWind(HTuple DefectWind);
         public abstract ResStatus BindDelegate(bool IsBind);
         public abstract ResStatus SetDebugWind(HTuple DebugWind, HWindow DrawWind);

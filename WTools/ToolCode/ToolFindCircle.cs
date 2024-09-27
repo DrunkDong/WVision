@@ -36,6 +36,13 @@ namespace WTools
         private string mResultString;
         private bool mForceOK;
         private int mNgReturnValue;
+        private ToolResultType mToolResultType;
+
+        public override ToolResultType ToolResultType
+        {
+            get => mToolResultType;
+            set => mToolResultType = value;
+        }
 
         public override bool ForceOK
         {
@@ -80,7 +87,7 @@ namespace WTools
             set => mResultString = value;
         }
 
-        public delegate int ParamChangedDe(HObject obj1, Bitmap obj2, List<StepInfo> StepInfoList, bool ShowObj);
+        public delegate int ParamChangedDe(HObject obj1, List<StepInfo> StepInfoList, bool ShowObj);
         [NonSerialized]
         public ParamChangedDe mParamChangedDe;
 
@@ -88,8 +95,11 @@ namespace WTools
         {
             mStepInfo = new StepInfo();
             mStepJumpInfo = new JumpInfo();
-            StepInfo.mToolType = ToolType.FindCircle;
-            ToolType = ToolType.FindCircle;
+            mStepInfo.mToolType = ToolType.FindCircle;
+            mToolType = ToolType.FindCircle;
+            mStepInfo.mToolResultType = ToolResultType.Circle;
+            mToolResultType = ToolResultType.Circle;
+
             ShowName = "查找圆";
             ToolName = "查找圆";
             mStepInfo.mShowName = "查找圆";
@@ -146,13 +156,13 @@ namespace WTools
             return ResStatus.OK;
         }
 
-        public override int ParamChanged(HObject obj1, Bitmap obj2, List<StepInfo> StepInfoList, bool ShowObj)
+        public override int ParamChanged(HObject obj1, List<StepInfo> StepInfoList, bool ShowObj)
         {
             JumpInfo StepJumpInfo;
-            return DebugRun(obj1, obj2, StepInfoList, false, out StepJumpInfo);
+            return DebugRun(obj1,StepInfoList, false, out StepJumpInfo);
         }
 
-        public override int DebugRun(HObject objj1, Bitmap objj2, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
+        public override int DebugRun(HObject objj1,List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
         {
             StepJumpInfo = new JumpInfo();
             mToolParam.ResultString = "";
@@ -301,7 +311,7 @@ namespace WTools
             }
         }
 
-        public override int ToolRun(HObject objj1, Bitmap objj2, List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
+        public override int ToolRun(HObject objj1,List<StepInfo> StepInfoList, bool ShowObj, out JumpInfo StepJumpInfo)
         {
             StepJumpInfo = new JumpInfo();
             mToolParam.ResultString = "";

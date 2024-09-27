@@ -449,13 +449,16 @@ D:\1.Code\4相机版本\WeiVision\WTools\obj\x64\Release\WTools.pdb
 D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\WTools.dll
 D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\WTools.pdb
 D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\halcondotnet.dll
+D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\WCommonTools.dll
 D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\log4net.dll
 D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\GxIAPINET.dll
 D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\MvCameraControl.Net.dll
 D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\NModbus4.dll
+D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\WCommonTools.pdb
 D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.csproj.AssemblyReference.cache
 D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.UToolAngleLL.resources
 D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.UToolBlob.resources
+D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.UToolBlobList.resources
 D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.UToolCompareDistance.resources
 D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.UToolCropImage.resources
 D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.UToolDecomposeRGB.resources
@@ -478,5 +481,3 @@ D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.csproj.CoreCompil
 D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.csproj.Up2Date
 D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.dll
 D:\002------GitWorkSpace\WVision\WTools\obj\x64\Release\WTools.pdb
-D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\WCommonTools.dll
-D:\002------GitWorkSpace\WVision\WTools\bin\x64\Release\WCommonTools.pdb
