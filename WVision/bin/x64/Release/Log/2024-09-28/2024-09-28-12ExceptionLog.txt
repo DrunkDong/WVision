@@ -1,0 +1,8 @@
+[2024-09-28 12:43:22,713]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 12:43:22,731]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 12:43:22,743]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 12:43:22,751]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 12:43:22,763]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 12:43:22,771]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 12:43:22,790]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 12:43:22,800]  1 -- FATAL -- {strSN  illegality}

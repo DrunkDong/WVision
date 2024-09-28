@@ -1,0 +1,46 @@
+[2024-09-28 14:14:19,804]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:14:19,820]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:14:19,832]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:14:19,841]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:14:19,853]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:14:19,862]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:14:19,872]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:14:19,881]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:16:59,895]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:16:59,914]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:16:59,937]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:16:59,947]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:16:59,959]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:16:59,968]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:16:59,978]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:16:59,988]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:18,463]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:18,479]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:18,491]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:18,499]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:18,515]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:18,524]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:18,536]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:18,544]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:39,594]  1 -- FATAL -- System.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.17.0.1:3000
+   在 System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+   在 WCommonTools.ModbusTcp.IsModbusTcpOpen() 位置 D:\002------GitWorkSpace\WVision\WCommonTools\ModbusTcp.cs:行号 43
+[2024-09-28 14:17:55,629]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:55,647]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:55,658]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:55,667]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:55,678]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:55,688]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:55,699]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:17:55,708]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:20:10,485]  1 -- FATAL -- System.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.17.0.1:3000
+   在 System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+   在 WCommonTools.ModbusTcp.IsModbusTcpOpen() 位置 D:\002------GitWorkSpace\WVision\WCommonTools\ModbusTcp.cs:行号 43
+[2024-09-28 14:20:48,340]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:20:48,358]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:20:48,371]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:20:48,381]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:20:48,392]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:20:48,401]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:20:48,412]  1 -- FATAL -- {strSN  illegality}
+[2024-09-28 14:20:48,421]  1 -- FATAL -- {strSN  illegality}
